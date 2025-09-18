@@ -1,12 +1,23 @@
+:root {
+    --bgTopNavColor : #000fb9;
+    --bgNavFirstColor : #0459d1;
+    --bgNavSecondColor : #0f6a03;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .sticky-top {
-    background: linear-gradient(to right, rgb(0, 15, 185), rgb(15, 106, 3));
+    background: linear-gradient(to right, var(--bgNavFirstColor), var(--bgNavSecondColor));
 }
 
 .notice {
     box-sizing: border-box;
     font-weight: 600;
     font-size: 1.05rem;
-    background-color: #0459d1;
+    background-color: var(--bgTopNavColor);
 }
 
 .navbar-brand {
@@ -21,16 +32,17 @@
 
 .navbar-brand .aheading {
     font-size: 1.7rem;
-    margin-left: 8px;
+    margin-left: 0.5rem;
+    margin-top: -1.6rem;
 }
 
 .navbar-brand .logotxt {
     font-size: 0.9rem;
-    margin-left: 3.8rem;
-    /* margin: 22px 0 0 60px; */
     font-style: italic;
     font-weight: 500;
-    margin-top: -20px;
+    position: absolute;
+    left: 5.8rem;
+    top: 3.4rem;
 }
 
 .brands span {
@@ -44,7 +56,6 @@
 .box {
     background-color: #0d69c4b0;
     width: 70%;
-    /* height: 45%; */
     position: absolute;
     top: -26.5rem;
     left: -10.5rem;
@@ -69,8 +80,7 @@
     background-image: url("../IMG/image.png");
     height: 12.5rem;
     position: relative;
-    top: -9rem;
-    /* left: 0.8rem; */
+    top: -8.4rem;
 }
 
 .box p {
@@ -93,7 +103,7 @@
 }
 
 .announcement .ah1 {
-    width: 12%;
+    width: 17%;
 }
 
 .announcement .ah2 {
@@ -114,8 +124,75 @@
 
 
 
+.fsh {
+    padding-top: 0.7rem;
+}
 
+.fservice {
+    padding: 6.2rem;
+    font-size: 1.8rem;
+    background: linear-gradient(to right, #00000080, #0009), url("../IMG/tt1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.fshape {
+    background-image: url("../IMG/shape.png");
+    height: 8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 2.5rem;
+    width: 100vw;
+}
+
+.f-foot {
+    color: #fff;
+    background: linear-gradient(to right, var(--bgNavFirstColor), var(--bgNavSecondColor));
+    margin-top: -4rem;
+}
+
+.f-foot .fsection {
+    padding-top: 2rem;
+}
+
+.f-foot .fsection .fcontent {
+    margin: 3rem 1.5rem 0;
+}
+
+.f-foot .media a {
+    padding: 0.7rem 0.6rem;
+}
+.f-foot .text-capitalize {
+    font-size: 1.5rem;
+}
+
+.f-foot .text-capitalize+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.f-foot .flinks {
+    list-style-type: none;
+}
+
+.flinks li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.12rem;
+}
+
+.flinks li a i {
+    padding-right: 1.8rem;
+}
+
+.footer-copy {
+    background-color: #fff !important;
+    color: #000d;
+    border: 1px dashed black;
+    border-radius: 0;
+}
 
 .error {
     text-align: center;
