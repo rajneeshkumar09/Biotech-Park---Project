@@ -1,7 +1,11 @@
 :root {
-    --bgTopNavColor : #000fb9;
+    --bgTopNavColor : #1c69c8;
     --bgNavFirstColor : #0459d1;
     --bgNavSecondColor : #0f6a03;
+    --textColorWhite : #fff;
+    --textColorBlack : #000;
+    --boxbuttonbg : #08a908;
+    --btn-bgColor : #127905;
 }
 
 body {
@@ -18,12 +22,13 @@ body {
     font-weight: 600;
     font-size: 1.05rem;
     background-color: var(--bgTopNavColor);
+    border-bottom: 2px solid linear-gradient(to right, #004ebc, #0f6a03);
 }
 
 .navbar-brand {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #000;
+    color: var(--textColorBlack);
 }
 
 .navbar-brand .logoimage {
@@ -33,7 +38,7 @@ body {
 .navbar-brand .aheading {
     font-size: 1.7rem;
     margin-left: 0.5rem;
-    margin-top: -1.6rem;
+    margin-top: -1.4rem;
 }
 
 .navbar-brand .logotxt {
@@ -42,12 +47,12 @@ body {
     font-weight: 500;
     position: absolute;
     left: 5.8rem;
-    top: 3.4rem;
+    top: 3.6rem;
 }
 
 .brands span {
     font-size: 18px;
-    background-color: #fff;
+    background-color: var(--textColorWhite);
     color: #127905;
     padding: 5px;
     border-radius: 5px;
@@ -68,12 +73,12 @@ body {
 }
 
 .nav-link {
-    color: #fff;
+    color: var(--textColorWhite);
     cursor: pointer;
 }
 
 .nav-link:hover {
-    color: #fff;
+    color: var(--textColorWhite);
 }
 
 .shape {
@@ -90,11 +95,16 @@ body {
 }
 
 .box button {
-    color: #fff;
-    background-color: #08a908;
-    padding: 10px;
+    color: var(--textColorWhite);
+    background-color: var(--boxbuttonbg);
+    padding: 0.65rem;
+    margin-left: 1rem;
     font-weight: 500;
     font-size: 1.1rem;
+}
+
+.box button:hover {
+    background-color: var(--boxbuttonbg);
 }
 
 .announcement {
@@ -122,7 +132,60 @@ body {
 
 
 
+.carding {
+    width: 20rem;
+    height: 18rem;
+}
 
+.org-back {
+    background-image: linear-gradient(to right, #000a, #000c), url("../IMG/back3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.certi-image {
+    height: 16.8rem;
+}
+
+.staff-image {
+    height: 20.2rem;
+}
+
+.carousel-inner {
+    display: inline-block;
+}
+
+.slide-image {
+    width: 22%;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #212529;
+}
+
+.accordion .accordion-body {
+    background-color: #f4f4f4;
+}
+
+.accordion .accordion-body ul li {
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding-left: 0.3rem;
+}
+
+.table thead {
+    font-size: 1.1rem;
+} 
+
+.table tbody {
+    font-size: 1.04rem;
+}
 
 .fsh {
     padding-top: 0.7rem;
@@ -131,8 +194,8 @@ body {
 .fservice {
     padding: 6.2rem;
     font-size: 1.8rem;
-    background: linear-gradient(to right, #00000080, #0009), url("../IMG/tt1.jpg");
-    background-size: contain;
+    background: linear-gradient(to right, #0007, #0009), url("../IMG/tt1.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -147,7 +210,7 @@ body {
 }
 
 .f-foot {
-    color: #fff;
+    color: var(--textColorWhite);
     background: linear-gradient(to right, var(--bgNavFirstColor), var(--bgNavSecondColor));
     margin-top: -4rem;
 }
@@ -157,7 +220,11 @@ body {
 }
 
 .f-foot .fsection .fcontent {
-    margin: 3rem 1.5rem 0;
+    margin: 3rem 3rem 0;
+}
+
+.f-foot .media ul {
+    list-style-type: none;
 }
 
 .f-foot .media a {
@@ -177,7 +244,7 @@ body {
 }
 
 .flinks li a {
-    color: #fff;
+    color: var(--textColorWhite);
     text-decoration: none;
     font-weight: 500;
     font-size: 1.12rem;
@@ -188,9 +255,10 @@ body {
 }
 
 .footer-copy {
-    background-color: #fff !important;
-    color: #000d;
-    border: 1px dashed black;
+    background-color: var(--textColorWhite) !important;
+    color: var(--textColorBlack);
+    opacity: 0.8;
+    border: 1px dashed var(--textColorBlack);
     border-radius: 0;
 }
 
@@ -202,4 +270,34 @@ body {
 
 .error h2 {
     font-weight: 400;
+}
+
+.whatsapp {
+    width: 4.5rem;
+    height: 4.5rem;
+    position: fixed;
+    bottom: 2rem;
+    left: 4rem;
+    z-index: 10;
+}
+
+.fixed-btn {
+    position: fixed;
+    z-index: 9;
+    color: #fff !important;
+    font-size: 1rem;
+    transform: rotate(270deg);
+    background-image: linear-gradient(to right, var(--bgNavFirstColor), var(--btn-bgColor));
+    padding: 0.7rem 0.9rem;
+    font-weight: 700;
+}
+
+.tel-btn {
+    right: -2rem;
+    top: 75%;
+}
+
+.form-btn {
+    right: -3.4rem;
+    top: 53%;
 }
